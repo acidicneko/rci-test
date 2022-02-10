@@ -1,6 +1,7 @@
 start test
 print This is test function
 call level1
+print again the test function
 stop test
 
 
