@@ -1,18 +1,14 @@
 start test
-
-print Installing i3 config
-i3/config=$HOME/test/i3/config
-endl
-print Installing lolrc
-lolrc=$HOME/test/lol/lolrc
-endl
-print Priting pacman version
-exec pacman --version
-endl
-exec echo This statement is printed via echo binary
-endl
-print Git Test Ended
-
-exec /bin/echo $HOME $RCI
-
+print This is test function
+call level1
 stop test
+
+
+start level1
+print This is level1
+call level2
+stop level1
+
+start level2
+print This is level2
+stop level2
